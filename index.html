@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Abid Anjum | GIS Web Mobile App Expert</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+  <!-- Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+  <!-- Nivo Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body onload="initialize()">
+
+  <!-- Header Area wrapper Starts -->
+  <header id="home" class="fullpage">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero-area">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                Services
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">
+                Work
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">
+                Education
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                Technologies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#portfolios">Work</a>
+        </li>
+        <li>
+          <a href="#blogs">Blogs</a>
+        </li>
+        <li>
+          <a href="#contact">Tech</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <div id='hero-area' class="container">
+      <div class="row">
+        <div id="earth_div" class='fullpage'>
+          <div style='    top: 34px;
+            position: absolute;
+            align-items: center;
+            text-align: center;
+          width: 100%;'>
+
+            <h5 class="script-font wow fadeInUp onetext" data-wow-delay="0.2s">Hi This is</h5>
+            <h2 class="head-title wow fadeInUp nametext" data-wow-delay="0.4s" style='font-size: 65px !important'>
+              Abid
+              Anjum</h2>
+            <p class="script-font wow fadeInUp onetext" data-wow-delay="0.6s" style='font-size: 40px !important'>I'm
+              GIS! expert</p>
+            <p class="script-font wow fadeInUp cooltext" data-wow-delay="0.6s" style='font-size: 55px !important'>I 'm Mobile
+              and Web App Architect </br>Developer</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
+              <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Krishna Lodha</h2>
+              <p class="script-font wow fadeInUp" data-wow-delay="0.6s">I'm OSM!</p>
+              <p class="script-font wow fadeInUp" data-wow-delay="0.6s">(Open Source Mapdeveloper)</p>
+              <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                <li>
+                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li>
+                  <a class="google" href="#"><i class="icon-social-google"></i></a>
+                </li>
+              </ul>
+              <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                <a href="#" class="btn btn-common">Get a Free Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <!-- About Section Start -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+            <img class="img-fluid" src="assets/img/about/me.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+            <h3>Hi Guys!</h3>
+            <p>16 years of hands-on experience in software development in diverse technologies primarily Mobile and Web Apps.
+            Six years worked as a technical lead and architect.
+            </br>Excellent expertise in developing mobile apps (native, Hybrid) Andriod, IOS, React Native, Cordova, Ionic. Strong web development skills using Java/J2EE, Asp.net, C#, service-oriented architecture.
+            Good expertise in back-end and front-end programming.
+            </br>Good experties in GIS based solutions.
+            </br>Good skills in Team management and customer interaction</p>
+            <div class="about-profile">
+              <ul class="admin-profile">
+                <li><span class="pro-title"> Name </span> <span class="pro-detail">Abid Anjum</span></li>
+                <li><span class="pro-title"> DOB </span> <span class="pro-detail">15 Feb 1979</span></li>
+                <li><span class="pro-title"> Experience </span> <span class="pro-detail">16 Year</span></li>
+                <li><span class="pro-title"> Nationality </span> <span class="pro-detail">Pakistan</span></li>
+                <li><span class="pro-title"> Working </span> <span class="pro-detail">Riyadh, Saudi Arabia</span></li>
+                <li><span class="pro-title"> e-mail </span> <span class="pro-detail"><a
+                      href="mailto:abid.anjum.sa2019@gmail.com?Subject=From%20Website"
+                      target="_top">abid.anjum.sa2019@gmail.com</a></span></li>
+                <li><span class="pro-title"> Phone </span> <span class="pro-detail"><a href="tel:+917743880438">+966
+                      565663825</a></span></li>
+                <li><span class="pro-title"> Skype </span> <span class="pro-detail"><a
+                      href="skype:abid.hussain.anjum?chat">@abid.hussain.anjum</a></span></li>
+              </ul>
+            </div>
+            <a href="https://www.dropbox.com/s/5umroja3eskycqv/Krishna%20Lodha.pdf?dl=0" target="_blank"
+              class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>
+            <a href="https://api.whatsapp.com/send?phone=966565663825&text=I'm%20interested%20in%20your%20services"
+              target="_blank" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12">
+          <div class="contact-block">
+            <h3>Connect me : </h3>
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <a href='https://www.facebook.com/abidchnpk' target="_blank"> <img
+                        src="assets/img/connect/fb.png" alt="Avatar" style='height: 50px;'></a>
+                    <a href='https://www.linkedin.com/in/abid-anjum-8371a517b/' target="_blank"> <img
+                        src="assets/img/connect/linkd.png" alt="Avatar" style='height: 50px;'></a>
+                    <a href='' target="_blank"> <img
+                        src="assets/img/connect/medium.png" alt="Avatar" style='height: 50px;'></a>
+                    <a href='' target="_blank"> <img
+                        src="assets/img/connect/stack.png" alt="Avatar" style='height: 50px;'></a>
+                    <a href='' target="_blank"> <img src="assets/img/connect/telegram.jpg"
+                        alt="Avatar" style='height: 50px;'></a>
+                    <a href='' target="_blank"> <img src="assets/img/connect/twit.png"
+                        alt="Avatar" style='height: 50px;'></a>
+                    <a href='' target="_blank"></a> <img
+                      src="assets/img/connect/upwork.png" alt="Avatar" style='height: 50px;'></a>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Services Section Start -->
+  <section id="services" class="services section-padding">
+    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
+    <div class="container">
+      <div class="row">
+      <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+            <div class="icon">
+              <i class="icon-grid"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Full Stack JAVA Web Development</a></h3>
+              <p>Developed enterprise web application in JAVA/J2EE, Spring, Hibernate, JSF, Orcle ADF</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon">
+              <i class="icon-layers"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Full Stack dotNet Web Development</a></h3>
+              <p>Developed many web applications in Asp.net MVC, C#, SQL Server, Crystal reports </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+            <div class="icon">
+              <i class="icon-grid"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Full Stack GIS Development</a></h3>
+              <p>Working with libraries such as Openlayers, Leaflet, Mapbox, etc. to create beautiful and strong GIS web
+                applications</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon">
+              <i class="icon-layers"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Digitisation</a></h3>
+              <p>Everyhing begins with collecting right data. I do digitisation and QC work with QGIS and ARCMAP</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+            <div class="icon">
+              <i class="icon-briefcase"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Enterprise GIS Developemt</a></h3>
+              <p>Companies with large funds tends to use sophosticated tools such as ArcGIS, Google Maps API, etc.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+            <div class="icon">
+              <i class="icon-pencil"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Andriod Development</a></h3>
+              <p>Developed complex platform based application in Java, Kotlin, React Native, Cordova, Ionic.</p>
+            </div>
+          </div>
+        </div>
+         <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+            <div class="icon">
+              <i class="icon-pencil"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">IOS App Development</a></h3>
+              <p>Developed complex IOS based application in Objective C, Swift, React Native, Cordova, Ionic.</p>
+            </div>
+          </div>
+        </div>
+         <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+            <div class="icon">
+              <i class="icon-grid"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Portal Development</a></h3>
+              <p>Developed GIS Based Portal and Customized Microsoft Sharepoint Portal.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolios" class="section-padding">
+    <!-- Container Starts -->
+    <div class="container">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Who am I</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Portfolio Controller/Buttons -->
+          <div class="controls text-center">
+            <a class="filter active btn btn-common" data-filter="all">
+              All
+            </a>
+            <a class="filter btn btn-common" data-filter=".Education">
+              Education
+            </a>
+            <a class="filter btn btn-common" data-filter=".Work">
+              Work
+            </a>
+            <!-- <a class="filter btn btn-common" data-filter=".Fun">
+              Fun
+            </a> -->
+          </div>
+          <!-- Portfolio Controller/Buttons Ends-->
+        </div>
+
+        <!-- Portfolio Recent Projects -->
+        <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Education">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <div class='container1'>
+                  <img src="assets/img/gallery/newports.jpg" style='height:149px' alt="" />
+                  <div class="overlay1">
+                    <div class="text1">Master in Computer Sciences</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Education">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <div class='container1'>
+                  <img src="assets/img/gallery/mcsd.png" style='height:149px' alt="" />
+                  <div class="overlay1">
+                    <div class="text1">Microsoft Certified Solution Developer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Education">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <div class='container1'>
+                  <img src="assets/img/gallery/jcp.gif" style='height:149px' alt="" />
+                  <div class="overlay1">
+                    <div class="text1" style='font-size: 16px'>Java Certified</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Work">
+
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/rcj.jpeg" style='height: 150px; width: 150px;
+                ' alt="" />
+                <div class="overlay">
+                  <div class="icons">
+
+                    <a class="link" href=""
+                      target="_blank">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <p style="padding: 5px 5px;"> GIS Based Native Mobile Application for andriod and IOS platform, developed in Andriod Java, Swift
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Work">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/omantel.jpg" style='height: 150px;' alt="" />
+                <div class="overlay">
+                  <div class="icons">
+
+                    <a class="link" href="/assets/links/work/magnar.html" target="_blank">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <p style="padding: 5px 5px;"> Complete telecom work order management system and service allocation, provisioning system developed in Asp.net, C#, Oracle</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Work">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/tcs.jpg" style='height: 150px;' alt="" />
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="link" href="/assets/links/work/offline.html" target="_blank">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <p style="padding: 5px 5px;"> Complete courier and logistic web and mobile solution, developed in Java, JSF, Oracle, Primefaces</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Work">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/uic.jpg" style='height: 150px;' alt="" />
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="link" href="/assets/links/work/notel.html" target="_blank">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <p style="padding: 5px 5px;">Developed enterprise distributed, solution for insurance company, Developed in Asp.net C#, SQL Server</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Work">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/escort.jpg" style='height: 150px;' alt="" />
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="link" href="/assets/links/work/cm.html" target="_blank">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <p style="padding: 5px 5px;">Online trading system for a trading house bank developed in JAVA, Spring, Hibernate, Oracle, JQuery</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Work">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/hms.jpg" style='height: 150px;' alt="" />
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="link" href="/assets/links/work/cm.html" target="_blank">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <p style="padding: 5px 5px;">Hospital management system developed in JAVA, Spring, Oracle, BootStrap</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Container Ends -->
+  </section>
+  <!-- Portfolio Section Ends -->
+
+  <!-- Blog Section -->
+
+  <!-- Blog Section Ends -->
+
+
+  <!-- Counter Area Start-->
+
+  <!-- Counter Area End-->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="section-padding">
+    <div class="contact-form">
+      <div class="container">
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-12 col-lg-12 col-sm-12">
+            <div class="contact-block">
+              <h3>Technology Stack </h3>
+              <form id="contactForm">
+                <div class="row">
+
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h2> Mapping Technologies</h2>
+                      <a href='https://www.mapbox.com' target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>Mapbox GL JS</a>
+                      <a href='https://openlayers.org/' target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>Openlayers</a>
+                      <a href='https://www.leafletjs.com' target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>Leaflet</a>
+                      <a href='https://developers.google.com/maps/gmp-get-started' target="_blank"
+                        class="btn btn-primary" style='margin:5px;padding:5px'>Google Maps API</a>
+                      <a href='https://developers.arcgis.com/javascript/3/' target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>Arcgis Java Script API</a>
+                      <a href='http://geoserver.org/' target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>Geoserver</a>
+                      <a href='https://postgis.net/' target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>PostGIS</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h2> Web Developemt Supporting Tech </h2>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>Java J2EE</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>Spring Framework</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>JSF Oracle ADF</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>Hibernate</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>Asp.net Form MVC</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>C#</a>
+                      <a class="btn btn-warning" style='margin:5px;padding:5px'>Django Framework</a>
+                      <a class="btn btn-warning" style='margin:5px;padding:5px'>Laravel Framework</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>Metronic theme</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>D3.js</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>Highchart.js</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>charts.js</a>
+                      <a class="btn btn-info" style='margin:5px;padding:5px'>AWS</a>
+
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h2> Databases</h2>
+                      <a target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>Oracle</a>
+                      <a target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>SQL Server</a>
+                      <a target="_blank" class="btn btn-primary"
+                        style='margin:5px;padding:5px'>MySQL</a>
+                      <a target="_blank"
+                        class="btn btn-primary" style='margin:5px;padding:5px'>Post GIS</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h2> Web Developemt Libraries</h2>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Javascript ES6</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Python 3</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>HTML</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>CSS</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Bootstrap</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Materialize</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>PHP</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>SQL</a>
+                    </div>
+                  </div>
+
+                   <div class="col-md-12">
+                    <div class="form-group">
+                      <h2> Mobile App Development</h2>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Javascript ES6</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Angular React JS</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Python 3</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>HTML</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>CSS</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Bootstrap</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>Materialize</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>PHP</a>
+                      <a class="btn btn-success" style='margin:5px;padding:5px'>SQL</a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h2> Tools Operating System</h2>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>Dockers</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>JIRA</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>GIT</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>Tomcat</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>IIS</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>JBoss</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>Windows</a>
+                      <a class="btn btn-primary" style='margin:5px;padding:5px'>Linux</a>
+                    </div>
+                  </div>
+                 
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+              </li>
+            </ul>
+            <p>Copyright © 2020 All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.mixitup.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.min.js"></script>
+  <script src="assets/js/map.js"></script>
+
+</body>
+
+</html>
